@@ -10,14 +10,17 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Agafay Labs — Agence Web à Marrakech">
   <meta property="og:description" content="Nous créons des sites web modernes et performants pour les entreprises marocaines qui veulent grandir en ligne.">
-  <meta property="og:image" content="https://agafaylabs.ma/images/og-social-share.png">
+  <meta property="og:image" content="https://agafaylabs.ma/images/og-social-share.webp">
   <meta property="og:url" content="https://agafaylabs.ma/">
   <meta property="og:type" content="website">
+
+  <!-- Preload critical assets -->
+  <link rel="preload" as="image" href="images/hero-background.webp" type="image/webp">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -74,7 +77,7 @@
   <section class="hero" id="hero">
     <!-- Desert background image -->
     <div class="hero__bg">
-      <img src="images/hero-background.png" alt="Agafay desert landscape at golden hour" loading="lazy">
+      <img src="images/hero-background.webp" alt="Agafay desert landscape at golden hour" loading="lazy">
     </div>
     <div class="hero__content">
       <h1 data-i18n="heroTagline">Votre présence en ligne, notre mission.</h1>
@@ -180,7 +183,7 @@
       <div class="portfolio-grid">
         <div class="portfolio-card reveal">
           <div class="portfolio-card__image">
-            <img src="images/portfolio-restaurant.png" alt="Site web pour Riad Étoile, Marrakech" loading="lazy">
+            <img src="images/portfolio-restaurant.webp" alt="Site web pour Riad Étoile, Marrakech" loading="lazy">
             <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
           </div>
           <div class="portfolio-card__info">
@@ -190,7 +193,7 @@
         </div>
         <div class="portfolio-card reveal">
           <div class="portfolio-card__image">
-            <img src="images/portfolio-boutique.png" alt="Site e-commerce pour boutique artisanale marocaine" loading="lazy">
+            <img src="images/portfolio-boutique.webp" alt="Site e-commerce pour boutique artisanale marocaine" loading="lazy">
             <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
           </div>
           <div class="portfolio-card__info">
@@ -200,7 +203,7 @@
         </div>
         <div class="portfolio-card reveal">
           <div class="portfolio-card__image">
-            <img src="images/portfolio-clinic.png" alt="Site web professionnel pour Atlas Dental" loading="lazy">
+            <img src="images/portfolio-clinic.webp" alt="Site web professionnel pour Atlas Dental" loading="lazy">
             <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
           </div>
           <div class="portfolio-card__info">
@@ -249,7 +252,7 @@
         <a href="posts/post-1.html" class="blog-card reveal">
           <div class="blog-card__image">
             <span class="blog-card__badge">Business</span>
-            <img src="images/blog-hero-french.png" alt="Entrepreneur marocain dans un souk" loading="lazy">
+            <img src="images/blog-hero-french.webp" alt="Entrepreneur marocain dans un souk" loading="lazy">
           </div>
           <div class="blog-card__body">
             <h3 data-i18n="blog1Title">Pourquoi votre entreprise a besoin d'un site web en 2025</h3>
@@ -264,7 +267,7 @@
         <a href="posts/post-2.html" class="blog-card reveal">
           <div class="blog-card__image">
             <span class="blog-card__badge">Marketing</span>
-            <img src="images/blog-hero-arabic.png" alt="رائدة أعمال مغربية تعمل على حاسوبها" loading="lazy">
+            <img src="images/blog-hero-arabic.webp" alt="رائدة أعمال مغربية تعمل على حاسوبها" loading="lazy">
           </div>
           <div class="blog-card__body">
             <h3 data-i18n="blog2Title">كيف يساعدك الموقع الإلكتروني على جذب المزيد من العملاء</h3>
@@ -279,7 +282,7 @@
         <a href="posts/post-3.html" class="blog-card reveal">
           <div class="blog-card__image">
             <span class="blog-card__badge">Web Design</span>
-            <img src="images/blog-hero-english.png" alt="Before and after website redesign comparison" loading="lazy">
+            <img src="images/blog-hero-english.webp" alt="Before and after website redesign comparison" loading="lazy">
           </div>
           <div class="blog-card__body">
             <h3 data-i18n="blog3Title">5 Signs Your Business Website Needs a Redesign</h3>
@@ -373,6 +376,6 @@
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
