@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Agafay Labs | Articles sur le web et le digital au Maroc</title>
+  <meta name="description" content="Consultez nos articles sur la création de sites web, le SEO et le marketing digital pour les entreprises marocaines.">
+  <link rel="canonical" href="https://agafaylabs.ma/blog.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog — Agafay Labs">
+  <meta property="og:description" content="Articles et conseils sur le web et le digital pour les entreprises marocaines.">
+  <meta property="og:image" content="https://agafaylabs.ma/images/og-blog.jpg">
+  <meta property="og:url" content="https://agafaylabs.ma/blog.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Agafay <span>Labs</span></a>
+      <div class="navbar__links" id="nav-links">
+        <a href="index.html#services" data-i18n="navServices">Services</a>
+        <a href="index.html#process" data-i18n="navProcess">Processus</a>
+        <a href="index.html#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a href="blog.html" class="active" data-i18n="navBlog">Blog</a>
+        <a href="index.html#contact" data-i18n="navContact">Contact</a>
+        <div class="lang-switcher">
+          <button data-lang="ar">AR</button>
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <h1 data-i18n="blogTitle">Notre blog</h1>
+    <p>Conseils, tendances et ressources pour votre présence digitale.</p>
+  </section>
+
+  <!-- CATEGORY FILTER -->
+  <div class="category-filter">
+    <button class="active" data-category="all">Tous</button>
+    <button data-category="business">Business</button>
+    <button data-category="marketing">Marketing</button>
+    <button data-category="web-design">Web Design</button>
+    <button data-category="seo">SEO</button>
+  </div>
+
+  <!-- BLOG LISTING -->
+  <section class="blog-listing">
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Post 1 -->
+        <a href="posts/post-1.html" class="blog-card reveal" data-category="business">
+          <div class="blog-card__image">
+            <span class="blog-card__badge">Business</span>
+            <img src="images/blog-hero-french.png" alt="Entrepreneur marocain dans un souk" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <h3>Pourquoi votre entreprise a besoin d'un site web en 2025</h3>
+            <p>Découvrez pourquoi une présence en ligne est devenue indispensable pour les PME marocaines et comment un site web professionnel peut transformer votre activité.</p>
+            <div class="blog-card__footer">
+              <span class="blog-card__link">Lire la suite →</span>
+              <span class="blog-card__date">1 avril 2025</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Post 2 -->
+        <a href="posts/post-2.html" class="blog-card reveal" data-category="marketing">
+          <div class="blog-card__image">
+            <span class="blog-card__badge">Marketing</span>
+            <img src="images/blog-hero-arabic.png" alt="رائدة أعمال مغربية" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <h3>كيف يساعدك الموقع الإلكتروني على جذب المزيد من العملاء</h3>
+            <p>تعرف على الطرق التي يمكن لموقعك الإلكتروني من خلالها استقطاب عملاء جدد وتنمية أعمالك بشكل مستدام.</p>
+            <div class="blog-card__footer">
+              <span class="blog-card__link">Lire la suite →</span>
+              <span class="blog-card__date">25 mars 2025</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Post 3 -->
+        <a href="posts/post-3.html" class="blog-card reveal" data-category="web-design">
+          <div class="blog-card__image">
+            <span class="blog-card__badge">Web Design</span>
+            <img src="images/blog-hero-english.png" alt="Before and after website redesign" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <h3>5 Signs Your Business Website Needs a Redesign</h3>
+            <p>Is your website holding your business back? Here are the warning signs that it's time for a modern refresh and how it can boost your growth.</p>
+            <div class="blog-card__footer">
+              <span class="blog-card__link">Read more →</span>
+              <span class="blog-card__date">18 March 2025</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">Agafay <span>Labs</span></a>
+          <p data-i18n="footerDesc">Agence web basée à Marrakech spécialisée dans la création de sites web modernes pour les entreprises marocaines.</p>
+        </div>
+        <div class="footer__nav">
+          <h4 data-i18n="footerNav">Navigation</h4>
+          <a href="index.html#services" data-i18n="navServices">Services</a>
+          <a href="index.html#process" data-i18n="navProcess">Processus</a>
+          <a href="index.html#portfolio" data-i18n="navPortfolio">Portfolio</a>
+          <a href="blog.html" data-i18n="navBlog">Blog</a>
+          <a href="index.html#contact" data-i18n="navContact">Contact</a>
+        </div>
+        <div class="footer__social">
+          <h4 data-i18n="footerSocial">Réseaux sociaux</h4>
+          <div class="footer__social-icons">
+            <a href="https://instagram.com/agafaylabs" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/agafaylabs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footerCopyright">© 2025 Agafay Labs. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

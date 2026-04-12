@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agafay Labs — Agence Web à Marrakech | Création de sites web</title>
+  <meta name="description" content="Agafay Labs est une agence web à Marrakech spécialisée dans la création de sites web modernes et performants pour les entreprises marocaines.">
+  <link rel="canonical" href="https://agafaylabs.ma/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Agafay Labs — Agence Web à Marrakech">
+  <meta property="og:description" content="Nous créons des sites web modernes et performants pour les entreprises marocaines qui veulent grandir en ligne.">
+  <meta property="og:image" content="https://agafaylabs.ma/images/og-social-share.png">
+  <meta property="og:url" content="https://agafaylabs.ma/">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Agafay Labs",
+    "description": "Agence web à Marrakech spécialisée dans la création de sites web modernes pour les entreprises marocaines.",
+    "url": "https://agafaylabs.ma",
+    "email": "contact@agafaylabs.ma",
+    "telephone": "+212 6XX XXX XXX",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marrakech",
+      "addressCountry": "MA"
+    },
+    "sameAs": [
+      "https://instagram.com/agafaylabs",
+      "https://linkedin.com/company/agafaylabs"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Nav Overlay -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Agafay <span>Labs</span></a>
+      <div class="navbar__links" id="nav-links">
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#process" data-i18n="navProcess">Processus</a>
+        <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a href="blog.html" data-i18n="navBlog">Blog</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <div class="lang-switcher">
+          <button data-lang="ar">AR</button>
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <!-- Desert background image -->
+    <div class="hero__bg">
+      <img src="images/hero-background.png" alt="Agafay desert landscape at golden hour" loading="lazy">
+    </div>
+    <div class="hero__content">
+      <h1 data-i18n="heroTagline">Votre présence en ligne, notre mission.</h1>
+      <p class="hero__subtitle" data-i18n="heroSubtitle">Nous créons des sites web modernes et performants pour les entreprises marocaines qui veulent grandir en ligne.</p>
+      <a href="#contact" class="btn-primary" data-i18n="heroCta">Demander un devis gratuit</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section-dark" id="services">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 data-i18n="servicesTitle">Nos services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-card__icon">🌐</div>
+          <h3 data-i18n="service1Title">Création de site web</h3>
+          <p data-i18n="service1Desc">Des sites modernes, rapides et adaptés à votre secteur d'activité.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">⚙️</div>
+          <h3 data-i18n="service2Title">Développement web</h3>
+          <p data-i18n="service2Desc">Des solutions sur mesure pour vos besoins spécifiques.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">📈</div>
+          <h3 data-i18n="service3Title">Référencement SEO</h3>
+          <p data-i18n="service3Desc">Apparaissez en tête des résultats Google et attirez plus de clients.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">🔍</div>
+          <h3 data-i18n="service4Title">Audit de site web</h3>
+          <p data-i18n="service4Desc">Nous analysons votre site existant et proposons des améliorations concrètes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section-alt" id="process">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 data-i18n="processTitle">Comment ça marche</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="process-step__number">1</div>
+          <h3 data-i18n="step1Title">Audit</h3>
+          <p data-i18n="step1Desc">Nous analysons vos besoins et votre marché.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__number">2</div>
+          <h3 data-i18n="step2Title">Design</h3>
+          <p data-i18n="step2Desc">Nous créons une maquette sur mesure pour votre marque.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__number">3</div>
+          <h3 data-i18n="step3Title">Lancement</h3>
+          <p data-i18n="step3Desc">Votre site est en ligne, rapide et optimisé.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section-light" id="why-us">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 data-i18n="whyTitle">Pourquoi choisir Agafay Labs ?</h2>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card reveal">
+          <div class="reason-card__icon">📍</div>
+          <h3 data-i18n="reason1Title">Expertise locale</h3>
+          <p data-i18n="reason1Desc">Nous comprenons le marché marocain et ses spécificités.</p>
+        </div>
+        <div class="reason-card reveal">
+          <div class="reason-card__icon">🗣️</div>
+          <h3 data-i18n="reason2Title">Trilingue</h3>
+          <p data-i18n="reason2Desc">Votre site en arabe, français et anglais pour toucher plus de clients.</p>
+        </div>
+        <div class="reason-card reveal">
+          <div class="reason-card__icon">⚡</div>
+          <h3 data-i18n="reason3Title">Livraison rapide</h3>
+          <p data-i18n="reason3Desc">Votre site livré en 7 à 14 jours ouvrables.</p>
+        </div>
+        <div class="reason-card reveal">
+          <div class="reason-card__icon">💰</div>
+          <h3 data-i18n="reason4Title">Prix abordables</h3>
+          <p data-i18n="reason4Desc">Des tarifs adaptés aux PME marocaines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section-alt" id="portfolio">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 data-i18n="portfolioTitle">Nos réalisations</h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal">
+          <div class="portfolio-card__image">
+            <img src="images/portfolio-restaurant.png" alt="Site web pour Riad Étoile, Marrakech" loading="lazy">
+            <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="portfolio1Title">Riad Étoile — Site vitrine</h3>
+            <p data-i18n="portfolio1Desc">Site web élégant pour un riad de charme à Marrakech.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-card__image">
+            <img src="images/portfolio-boutique.png" alt="Site e-commerce pour boutique artisanale marocaine" loading="lazy">
+            <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="portfolio2Title">Saveurs du Souk — Restaurant</h3>
+            <p data-i18n="portfolio2Desc">Présence en ligne complète pour un restaurant marocain moderne.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-card__image">
+            <img src="images/portfolio-clinic.png" alt="Site web professionnel pour Atlas Dental" loading="lazy">
+            <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="portfolio3Title">Atlas Dental — Clinique</h3>
+            <p data-i18n="portfolio3Desc">Site professionnel avec prise de rendez-vous en ligne.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section-dark" id="testimonials">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 data-i18n="testimonialsTitle">Ce que disent nos clients</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <p class="testimonial-card__quote" data-i18n="testimonial1Quote">Agafay Labs a transformé notre présence en ligne. Nous recevons trois fois plus de demandes depuis le lancement de notre nouveau site.</p>
+          <p class="testimonial-card__author" data-i18n="testimonial1Author">Amina B.</p>
+          <p class="testimonial-card__role" data-i18n="testimonial1Role">Propriétaire, Riad Étoile</p>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="testimonial-card__quote" data-i18n="testimonial2Quote">Un travail professionnel, rapide et à un prix très raisonnable. Je recommande vivement.</p>
+          <p class="testimonial-card__author" data-i18n="testimonial2Author">Karim M.</p>
+          <p class="testimonial-card__role" data-i18n="testimonial2Role">Gérant, Saveurs du Souk</p>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="testimonial-card__quote" data-i18n="testimonial3Quote">L'équipe a parfaitement compris nos besoins. Le site est beau, rapide et nos patients le trouvent très facile à utiliser.</p>
+          <p class="testimonial-card__author" data-i18n="testimonial3Author">Dr. Fatima Z.</p>
+          <p class="testimonial-card__role" data-i18n="testimonial3Role">Directrice, Atlas Dental</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="section-blog-home" id="blog">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 data-i18n="blogTitle">Notre blog</h2>
+      </div>
+      <div class="blog-grid">
+        <!-- Post 1 -->
+        <a href="posts/post-1.html" class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__badge">Business</span>
+            <img src="images/blog-hero-french.png" alt="Entrepreneur marocain dans un souk" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <h3 data-i18n="blog1Title">Pourquoi votre entreprise a besoin d'un site web en 2025</h3>
+            <p data-i18n="blog1Excerpt">Découvrez pourquoi une présence en ligne est devenue indispensable pour les PME marocaines.</p>
+            <div class="blog-card__footer">
+              <span class="blog-card__link" data-i18n="readMore">Lire la suite →</span>
+              <span class="blog-card__date">2025-04-01</span>
+            </div>
+          </div>
+        </a>
+        <!-- Post 2 -->
+        <a href="posts/post-2.html" class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__badge">Marketing</span>
+            <img src="images/blog-hero-arabic.png" alt="رائدة أعمال مغربية تعمل على حاسوبها" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <h3 data-i18n="blog2Title">كيف يساعدك الموقع الإلكتروني على جذب المزيد من العملاء</h3>
+            <p data-i18n="blog2Excerpt">تعرف على الطرق التي يمكن لموقعك الإلكتروني من خلالها استقطاب عملاء جدد.</p>
+            <div class="blog-card__footer">
+              <span class="blog-card__link" data-i18n="readMore">Lire la suite →</span>
+              <span class="blog-card__date">2025-03-25</span>
+            </div>
+          </div>
+        </a>
+        <!-- Post 3 -->
+        <a href="posts/post-3.html" class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__badge">Web Design</span>
+            <img src="images/blog-hero-english.png" alt="Before and after website redesign comparison" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <h3 data-i18n="blog3Title">5 Signs Your Business Website Needs a Redesign</h3>
+            <p data-i18n="blog3Excerpt">Is your website holding your business back? Here are the warning signs.</p>
+            <div class="blog-card__footer">
+              <span class="blog-card__link" data-i18n="readMore">Lire la suite →</span>
+              <span class="blog-card__date">2025-03-18</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section-dark" id="contact">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <div class="contact-info">
+          <h2 data-i18n="contactTitle">Contactez-nous</h2>
+          <p data-i18n="contactSubtitle">Vous avez un projet ? Parlons-en.</p>
+          <div class="contact-info__item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A6D4E" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>contact@agafaylabs.ma</span>
+          </div>
+          <div class="contact-info__item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A6D4E" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+212 6XX XXX XXX</span>
+          </div>
+          <div class="contact-info__item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A6D4E" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Marrakech, Morocco</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name" data-i18n="labelName">Nom complet</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="labelEmail">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone" data-i18n="labelPhone">Téléphone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="labelMessage">Votre message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-error" id="form-error"></div>
+          <div class="form-success" id="form-success" data-i18n="formSuccess">Merci ! Votre message a été envoyé avec succès.</div>
+          <button type="submit" class="btn-primary" data-i18n="labelSend">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">Agafay <span>Labs</span></a>
+          <p data-i18n="footerDesc">Agence web basée à Marrakech spécialisée dans la création de sites web modernes pour les entreprises marocaines.</p>
+        </div>
+        <div class="footer__nav">
+          <h4 data-i18n="footerNav">Navigation</h4>
+          <a href="#services" data-i18n="navServices">Services</a>
+          <a href="#process" data-i18n="navProcess">Processus</a>
+          <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+          <a href="blog.html" data-i18n="navBlog">Blog</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </div>
+        <div class="footer__social">
+          <h4 data-i18n="footerSocial">Réseaux sociaux</h4>
+          <div class="footer__social-icons">
+            <a href="https://instagram.com/agafaylabs" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/agafaylabs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footerCopyright">© 2025 Agafay Labs. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

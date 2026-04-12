@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — Agafay Labs Blog</title>
+  <meta name="description" content="Lisez nos articles sur la création de sites web et le marketing digital au Maroc.">
+  <link rel="canonical" href="https://agafaylabs.ma/blog-post.html">
+
+  <meta property="og:title" content="Article — Agafay Labs Blog">
+  <meta property="og:description" content="Articles et conseils sur le digital au Maroc.">
+  <meta property="og:image" content="https://agafaylabs.ma/images/og-blog.jpg">
+  <meta property="og:url" content="https://agafaylabs.ma/blog-post.html">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+  <div class="reading-progress"></div>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Agafay <span>Labs</span></a>
+      <div class="navbar__links" id="nav-links">
+        <a href="index.html#services" data-i18n="navServices">Services</a>
+        <a href="index.html#process" data-i18n="navProcess">Processus</a>
+        <a href="index.html#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a href="blog.html" class="active" data-i18n="navBlog">Blog</a>
+        <a href="index.html#contact" data-i18n="navContact">Contact</a>
+        <div class="lang-switcher">
+          <button data-lang="ar">AR</button>
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="post-hero">
+    <div class="container">
+      <a href="blog.html" class="back-to-blog">← Retour au blog</a>
+      <div class="post-hero__meta">
+        <span class="post-hero__badge">Catégorie</span>
+        <span class="post-hero__date">Date</span>
+        <span class="post-hero__author">Agafay Labs</span>
+      </div>
+      <h1>Titre de l'article</h1>
+      <div class="post-hero__image">
+        <span>1200 × 600 — Image de couverture</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p>Contenu de l'article ici...</p>
+  </article>
+
+  <!-- RELATED POSTS -->
+  <section class="related-posts">
+    <div class="container">
+      <h2>Articles similaires</h2>
+      <div class="blog-grid">
+        <a href="#" class="blog-card">
+          <div class="blog-card__image">
+            <span class="blog-card__badge">Catégorie</span>
+            <span>720 × 400</span>
+          </div>
+          <div class="blog-card__body">
+            <h3>Titre de l'article</h3>
+            <p>Extrait de l'article...</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">Agafay <span>Labs</span></a>
+          <p data-i18n="footerDesc">Agence web basée à Marrakech spécialisée dans la création de sites web modernes pour les entreprises marocaines.</p>
+        </div>
+        <div class="footer__nav">
+          <h4 data-i18n="footerNav">Navigation</h4>
+          <a href="index.html#services" data-i18n="navServices">Services</a>
+          <a href="index.html#process" data-i18n="navProcess">Processus</a>
+          <a href="index.html#portfolio" data-i18n="navPortfolio">Portfolio</a>
+          <a href="blog.html" data-i18n="navBlog">Blog</a>
+          <a href="index.html#contact" data-i18n="navContact">Contact</a>
+        </div>
+        <div class="footer__social">
+          <h4 data-i18n="footerSocial">Réseaux sociaux</h4>
+          <div class="footer__social-icons">
+            <a href="https://instagram.com/agafaylabs" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/agafaylabs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footerCopyright">© 2025 Agafay Labs. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
