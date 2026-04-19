@@ -21,6 +21,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- Critical CSS: above-the-fold styles inlined for instant render -->
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Plus Jakarta Sans',sans-serif;line-height:1.7;color:#1C1410;background:#F2EBE0;overflow-x:hidden}
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}
+    .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:#1C1410;padding:1rem 0}
+    .navbar .container{display:flex;align-items:center;justify-content:space-between}
+    .navbar__logo{font-size:1.5rem;font-weight:600;color:#F2EBE0;letter-spacing:-0.5px;text-decoration:none}
+    .navbar__logo span{color:#C8A97E}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#1C1410 0%,#3D2E1E 40%,#2a1f17 60%,#1C1410 100%);background-size:300% 300%;animation:heroGradient 12s ease infinite;position:relative;overflow:hidden;padding:8rem 1.5rem 4rem}
+    @keyframes heroGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    .hero h1{color:#F2EBE0;font-size:clamp(2rem,5vw,3.5rem);font-weight:500;line-height:1.2;margin-bottom:1.25rem}
+    .hero__subtitle{color:#8A6D4E;font-size:1.15rem;margin-bottom:2.5rem}
+    .hero__content{position:relative;z-index:1;max-width:700px}
+    .btn-primary{display:inline-block;padding:1rem 2.5rem;background:#C8A97E;color:#1C1410;font-weight:600;font-size:1.05rem;border:none;border-radius:8px;cursor:pointer;text-decoration:none}
+  </style>
+
   <link rel="stylesheet" href="css/style.css">
 
   <!-- JSON-LD LocalBusiness -->
@@ -178,7 +196,7 @@
       <div class="portfolio-grid">
         <div class="portfolio-card reveal">
           <div class="portfolio-card__image">
-            <img src="images/portfolio-restaurant.webp" alt="Site web pour Riad Étoile, Marrakech" loading="lazy">
+            <img src="images/portfolio-restaurant.webp" alt="Site web pour Riad Étoile, Marrakech" loading="lazy" decoding="async" width="640" height="440">
             <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
           </div>
           <div class="portfolio-card__info">
@@ -188,7 +206,7 @@
         </div>
         <div class="portfolio-card reveal">
           <div class="portfolio-card__image">
-            <img src="images/portfolio-boutique.webp" alt="Site e-commerce pour boutique artisanale marocaine" loading="lazy">
+            <img src="images/portfolio-boutique.webp" alt="Site e-commerce pour boutique artisanale marocaine" loading="lazy" decoding="async" width="640" height="440">
             <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
           </div>
           <div class="portfolio-card__info">
@@ -198,7 +216,7 @@
         </div>
         <div class="portfolio-card reveal">
           <div class="portfolio-card__image">
-            <img src="images/portfolio-clinic.webp" alt="Site web professionnel pour Atlas Dental" loading="lazy">
+            <img src="images/portfolio-clinic.webp" alt="Site web professionnel pour Atlas Dental" loading="lazy" decoding="async" width="640" height="440">
             <div class="portfolio-card__overlay"><span data-i18n="viewProject">Voir le projet</span></div>
           </div>
           <div class="portfolio-card__info">
@@ -247,7 +265,7 @@
         <a href="posts/post-1.html" class="blog-card reveal">
           <div class="blog-card__image">
             <span class="blog-card__badge">Business</span>
-            <img src="images/blog-hero-french.webp" alt="Entrepreneur marocain dans un souk" loading="lazy">
+            <img src="images/blog-hero-french.webp" alt="Entrepreneur marocain dans un souk" loading="lazy" decoding="async" width="600" height="360">
           </div>
           <div class="blog-card__body">
             <h3 data-i18n="blog1Title">Pourquoi votre entreprise a besoin d'un site web en 2025</h3>
@@ -262,7 +280,7 @@
         <a href="posts/post-2.html" class="blog-card reveal">
           <div class="blog-card__image">
             <span class="blog-card__badge">Marketing</span>
-            <img src="images/blog-hero-arabic.webp" alt="رائدة أعمال مغربية تعمل على حاسوبها" loading="lazy">
+            <img src="images/blog-hero-arabic.webp" alt="رائدة أعمال مغربية تعمل على حاسوبها" loading="lazy" decoding="async" width="600" height="360">
           </div>
           <div class="blog-card__body">
             <h3 data-i18n="blog2Title">كيف يساعدك الموقع الإلكتروني على جذب المزيد من العملاء</h3>
@@ -277,7 +295,7 @@
         <a href="posts/post-3.html" class="blog-card reveal">
           <div class="blog-card__image">
             <span class="blog-card__badge">Web Design</span>
-            <img src="images/blog-hero-english.webp" alt="Before and after website redesign comparison" loading="lazy">
+            <img src="images/blog-hero-english.webp" alt="Before and after website redesign comparison" loading="lazy" decoding="async" width="600" height="360">
           </div>
           <div class="blog-card__body">
             <h3 data-i18n="blog3Title">5 Signs Your Business Website Needs a Redesign</h3>
