@@ -1,5 +1,5 @@
 /* ============================================
-   AGAFAY LABS — Main Script
+   HIVERNAGE DIGITAL — Main Script
    ============================================ */
 
 /* --- Translations --- */
@@ -34,7 +34,7 @@ const translations = {
     step3Title: "Lancement",
     step3Desc: "Votre site est en ligne, rapide et optimisé.",
     // Why Us
-    whyTitle: "Pourquoi choisir Agafay Labs\u00A0?",
+    whyTitle: "Pourquoi choisir Hivernage Digital\u00A0?",
     reason1Title: "Expertise locale",
     reason1Desc: "Nous comprenons le marché marocain et ses spécificités.",
     reason2Title: "Trilingue",
@@ -54,7 +54,7 @@ const translations = {
     portfolio3Desc: "Site professionnel avec prise de rendez-vous en ligne.",
     // Testimonials
     testimonialsTitle: "Ce que disent nos clients",
-    testimonial1Quote: "Agafay Labs a transformé notre présence en ligne. Nous recevons trois fois plus de demandes depuis le lancement de notre nouveau site.",
+    testimonial1Quote: "Hivernage Digital a transformé notre présence en ligne. Nous recevons trois fois plus de demandes depuis le lancement de notre nouveau site.",
     testimonial1Author: "Amina B.",
     testimonial1Role: "Propriétaire, Riad Étoile",
     testimonial2Quote: "Un travail professionnel, rapide et à un prix très raisonnable. Je recommande vivement.",
@@ -85,7 +85,7 @@ const translations = {
     footerDesc: "Agence web basée à Marrakech spécialisée dans la création de sites web modernes pour les entreprises marocaines.",
     footerNav: "Navigation",
     footerSocial: "Réseaux sociaux",
-    footerCopyright: "© 2025 Agafay Labs. Tous droits réservés."
+    footerCopyright: "© 2025 Hivernage Digital. Tous droits réservés."
   },
   en: {
     navServices: "Services",
@@ -112,7 +112,7 @@ const translations = {
     step2Desc: "We craft a custom mockup aligned with your brand.",
     step3Title: "Launch",
     step3Desc: "Your site goes live, fast and fully optimized.",
-    whyTitle: "Why choose Agafay Labs?",
+    whyTitle: "Why choose Hivernage Digital?",
     reason1Title: "Local expertise",
     reason1Desc: "We understand the Moroccan market and its nuances.",
     reason2Title: "Trilingual",
@@ -130,7 +130,7 @@ const translations = {
     portfolio3Title: "Atlas Dental — Clinic",
     portfolio3Desc: "Professional website with online appointment booking.",
     testimonialsTitle: "What our clients say",
-    testimonial1Quote: "Agafay Labs transformed our online presence. We receive three times more inquiries since launching our new website.",
+    testimonial1Quote: "Hivernage Digital transformed our online presence. We receive three times more inquiries since launching our new website.",
     testimonial1Author: "Amina B.",
     testimonial1Role: "Owner, Riad Étoile",
     testimonial2Quote: "Professional, fast work at a very reasonable price. Highly recommended.",
@@ -158,7 +158,7 @@ const translations = {
     footerDesc: "Web agency based in Marrakech specializing in creating modern websites for Moroccan businesses.",
     footerNav: "Navigation",
     footerSocial: "Social media",
-    footerCopyright: "© 2025 Agafay Labs. All rights reserved."
+    footerCopyright: "© 2025 Hivernage Digital. All rights reserved."
   },
   ar: {
     navServices: "خدماتنا",
@@ -185,7 +185,7 @@ const translations = {
     step2Desc: "نصمم نموذجاً مخصصاً يعكس هويتك البصرية.",
     step3Title: "الإطلاق",
     step3Desc: "موقعك يصبح متاحاً، سريعاً ومحسّناً بالكامل.",
-    whyTitle: "لماذا تختار Agafay Labs؟",
+    whyTitle: "لماذا تختار Hivernage Digital؟",
     reason1Title: "خبرة محلية",
     reason1Desc: "نفهم السوق المغربي وخصوصياته.",
     reason2Title: "ثلاث لغات",
@@ -203,7 +203,7 @@ const translations = {
     portfolio3Title: "أطلس دنتال — عيادة",
     portfolio3Desc: "موقع احترافي مع نظام حجز المواعيد عبر الإنترنت.",
     testimonialsTitle: "ماذا يقول عملاؤنا",
-    testimonial1Quote: "غيّرت Agafay Labs حضورنا الرقمي بالكامل. نتلقى ثلاثة أضعاف الاستفسارات منذ إطلاق موقعنا الجديد.",
+    testimonial1Quote: "غيّرت Hivernage Digital حضورنا الرقمي بالكامل. نتلقى ثلاثة أضعاف الاستفسارات منذ إطلاق موقعنا الجديد.",
     testimonial1Author: "أمينة ب.",
     testimonial1Role: "مالكة، رياض النجمة",
     testimonial2Quote: "عمل احترافي وسريع بسعر معقول جداً. أنصح بهم بشدة.",
@@ -231,13 +231,13 @@ const translations = {
     footerDesc: "وكالة ويب مقرها مراكش متخصصة في إنشاء مواقع إلكترونية حديثة للشركات المغربية.",
     footerNav: "التنقل",
     footerSocial: "وسائل التواصل",
-    footerCopyright: "© 2025 Agafay Labs. جميع الحقوق محفوظة."
+    footerCopyright: "© 2025 Hivernage Digital. جميع الحقوق محفوظة."
   }
 };
 
 /* --- Language Switcher --- */
 function setLanguage(lang) {
-  localStorage.setItem('agafay-lang', lang);
+  localStorage.setItem('hivernage-lang', lang);
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   if (lang === 'ar') {
@@ -270,7 +270,7 @@ function setLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
 
   // Language init
-  const savedLang = localStorage.getItem('agafay-lang') || 'fr';
+  const savedLang = localStorage.getItem('hivernage-lang') || 'fr';
   setLanguage(savedLang);
 
   // Language button clicks
@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (errorEl) errorEl.classList.remove('show');
       if (successEl) {
-        const lang = localStorage.getItem('agafay-lang') || 'fr';
+        const lang = localStorage.getItem('hivernage-lang') || 'fr';
         successEl.textContent = translations[lang]?.formSuccess || 'Message sent!';
         successEl.classList.add('show');
       }

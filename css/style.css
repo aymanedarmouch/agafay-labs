@@ -1,5 +1,5 @@
 /* ============================================
-   AGAFAY LABS — Design System
+   HIVERNAGE DIGITAL — Design System
    ============================================ */
 
 /* --- Google Fonts --- */
@@ -264,21 +264,29 @@ h3 { font-size: 1.375rem; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--color-dark-earth);
+  background: linear-gradient(135deg, #1C1410 0%, #3D2E1E 40%, #2a1f17 60%, #1C1410 100%);
+  background-size: 300% 300%;
+  animation: heroGradient 12s ease infinite;
   position: relative;
   overflow: hidden;
   padding: 8rem 1.5rem 4rem;
 }
-.hero__bg {
-  position: absolute;
-  inset: 0;
-  opacity: 0.15;
-  pointer-events: none;
+@keyframes heroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-.hero__bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Subtle decorative glow */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200,169,126,0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 .portfolio-card__image img {
   width: 100%;

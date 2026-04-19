@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://agafaylabs.ma/sitemap.xml
+Sitemap: https://hivernagedigital.ma/sitemap.xml
